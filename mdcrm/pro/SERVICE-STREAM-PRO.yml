@@ -1,0 +1,26 @@
+server:
+  port: 8050
+security.basic.enabled: false
+spring:
+   application:
+     name: service-stream
+     
+  cloud: 
+    config: 
+      discovery: 
+        enabled: true
+        serviceId: SERVICE-CONFIG
+      profile: DEV
+          
+turbine:
+    aggregator:
+        clusterConfig: default 
+    appConfig: service-sr,SERVICE-RETAIL-PROVIDE,SERVICE-GATEWAY
+    clusterNameExpression: new String("default")     
+     
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://127.0.0.1:1112/eureka/
+   instance:
+     preferIpAddress: false
