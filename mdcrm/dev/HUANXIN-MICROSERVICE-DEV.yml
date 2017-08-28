@@ -1,0 +1,26 @@
+spring: 
+  application: 
+    name: huanxin-service
+  messages: 
+    basename: i18n/messages,i18n/codes  
+  cloud: 
+    config: 
+      discovery: 
+        enabled: true
+        serviceId: SERVICE-CONFIG
+      profile: DEV
+
+server: 
+  port: 10111
+      
+eureka: 
+  client: 
+    serviceUrl: 
+      defaultZone: http://127.0.0.1:1112/eureka/
+  instance: 
+    prefer-ip-address: true #注册时使用ip地址
+    
+# Logger config
+logging:
+  config: classpath:log4j2-dev.xml
+    

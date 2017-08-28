@@ -1,0 +1,24 @@
+server:
+  port: 8020
+spring:
+   application:
+     name: retail-service-provide
+     
+ cloud: 
+    config: 
+      discovery: 
+        enabled: true
+        serviceId: SERVICE-CONFIG
+      profile: DEV   
+    
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://127.0.0.1:1112/eureka/
+   instance:
+     preferIpAddress: true
+    
+ ##    Logger config
+logging:
+  config: classpath:log4j2-spring.xml
+  
