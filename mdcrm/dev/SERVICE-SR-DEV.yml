@@ -1,6 +1,6 @@
 ##cas 
-cas.server.url:
-cas.client.url:
+cas.server.url:http://localhsot:8080
+cas.client.url:http://localhsot:8080
 ##redis
 redis.max-active:0
 redis.max-idle:0
@@ -13,7 +13,7 @@ redis.sentinel.nodes:
 ##rabbitmq
 spring.rabbitmq.host:
 spring.rabbitmq.port:
-spring.rabbitmq.username:
-spring.rabbitmq.password:
-spring.rabbitmq.virtual-host:
+spring.rabbitmq.username:username
+spring.rabbitmq.password:passoword
+spring.rabbitmq.virtual-host:localhost
 spring.rabbitmq.publisher-confirms:
