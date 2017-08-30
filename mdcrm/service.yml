@@ -1,1 +1,21 @@
 hello: hello world. how are you. this is 
+##cas 
+cas: 
+  server: 
+    url: http://192.168.60.114:8080
+  client: 
+    url: http://localhost:3000
+##redis
+redis: 
+  sentinel:
+    master: redis-master
+    nodes: 192.168.60.110:26379
+  maxRedirections: 6
+  timeout: 60000
+  password: foobared
+  max-active: 500
+  max-idle: 5000
+  max-wait: 10000
+  testOnBorrow: true
+  expire: 3600
+##rabbitmq

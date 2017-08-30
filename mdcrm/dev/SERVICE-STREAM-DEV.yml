@@ -1,19 +1,20 @@
 ##cas 
-cas.server.url:
-cas.client.url:
+cas: 
+  server: 
+    url: http://192.168.60.114:8080
+  client: 
+    url: http://localhost:3000
 ##redis
-redis.max-active:
-redis.max-idle:
-redis.max-wait:
-redis.timeout:
-redis.password:
-redis.testOnBorrow:
-redis.sentinel.master:
-redis.sentinel.nodes:
+redis: 
+  sentinel:
+    master: redis-master
+    nodes: 192.168.60.110:26379
+  maxRedirections: 6
+  timeout: 60000
+  password: foobared
+  max-active: 500
+  max-idle: 5000
+  max-wait: 10000
+  testOnBorrow: true
+  expire: 3600
 ##rabbitmq
-spring.rabbitmq.host:
-spring.rabbitmq.port:
-spring.rabbitmq.username:
-spring.rabbitmq.password:
-spring.rabbitmq.virtual-host:
-spring.rabbitmq.publisher-confirms:
