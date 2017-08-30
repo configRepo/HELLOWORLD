@@ -1,11 +1,11 @@
 spring: 
   application: 
-    name: admin-api-gateway
+    name: service-gateway
   cloud: 
     config: 
       discovery: 
         enabled: true
-        serviceId: config-server
+        serviceId: service-config
       profile: prod
 
 server: 
