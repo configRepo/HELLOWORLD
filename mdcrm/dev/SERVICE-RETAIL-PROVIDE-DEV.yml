@@ -1,1 +1,19 @@
-hello: hello world.
+##cas 
+cas.server.url:
+cas.client.url:
+##redis
+redis.max-active:
+redis.max-idle:
+redis.max-wait:
+redis.timeout:
+redis.password:
+redis.testOnBorrow:
+redis.sentinel.master:
+redis.sentinel.nodes:
+##rabbitmq
+spring.rabbitmq.host:
+spring.rabbitmq.port:
+spring.rabbitmq.username:
+spring.rabbitmq.password:
+spring.rabbitmq.virtual-host:
+spring.rabbitmq.publisher-confirms:
