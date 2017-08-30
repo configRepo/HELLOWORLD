@@ -40,9 +40,3 @@ redis:
   testOnBorrow: true
   expire: 3600
 ##rabbitmq
-spring.rabbitmq.host:
-spring.rabbitmq.port:
-spring.rabbitmq.username:username
-spring.rabbitmq.password:passoword
-spring.rabbitmq.virtual-host:localhost
-spring.rabbitmq.publisher-confirms:
