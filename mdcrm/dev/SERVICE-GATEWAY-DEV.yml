@@ -10,9 +10,18 @@ eureka:
 zuul:
   # ignored-services: microservice-provider-user # 需要忽视的服务(配置后将不会被路由)
    routes:
-      user: # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
-        path: /sr/** # 想要映射到的路径
-        service-id: service-sr # Eureka中的serviceId   
+      sr: # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
+        path: /sr/** 
+        service-id: service-sr # Eureka中的serviceId
+      dealer: # 
+        path: /dealer/** 
+        service-id: service-dealer # Eureka中的serviceId
+      saler: # 
+        path: /saler/** 
+        service-id: service-saler # Eureka中的serviceId 
+      express: # 
+        path: /express/** 
+        service-id: service-express # Eureka中的serviceId         
                 
 # Logger config
 logging:
