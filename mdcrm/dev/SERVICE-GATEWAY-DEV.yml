@@ -12,16 +12,16 @@ zuul:
    routes:
       sr: # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
         path: /sr/** 
-        service-id: service-sr # Eureka中的serviceId
+        service-id: service-sr 
       dealer: # 
         path: /dealer/** 
-        service-id: service-dealer # Eureka中的serviceId
+        service-id: service-dealer 
       saler: # 
         path: /saler/** 
-        service-id: service-saler # Eureka中的serviceId 
+        service-id: service-saler 
       express: # 
         path: /express/** 
-        service-id: service-express # Eureka中的serviceId         
+        service-id: service-express      
                 
 # Logger config
 logging:
