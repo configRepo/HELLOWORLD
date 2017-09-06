@@ -23,9 +23,6 @@ zuul:
         path: /express/** 
         service-id: service-express      
                 
-# Logger config
-logging:
-  config: classpath:log4j2-dev.xml
 
 
 
