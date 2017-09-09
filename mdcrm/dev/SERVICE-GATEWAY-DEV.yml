@@ -21,7 +21,10 @@ zuul:
         service-id: service-saler 
       express: # 
         path: /express/** 
-        service-id: service-express      
+        service-id: service-express
+      order: # 
+        path: /order/** 
+        service-id: service-dealer        
                 
 
 
