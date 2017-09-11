@@ -10,22 +10,21 @@ eureka:
 zuul:
   # ignored-services: microservice-provider-user # 需要忽视的服务(配置后将不会被路由)
    routes:
-      sr: # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
-        path: /sr/** 
-        service-id: service-sr 
-      dealer: # 
-        path: /dealer/** 
-        service-id: service-dealer 
-      saler: # 
-        path: /saler/** 
-        service-id: service-saler 
-      express: # 
-        path: /express/** 
-        service-id: service-express
+       # sr: # 可以随便写，在zuul上面唯一即可；当这里的值 = service-id时，service-id可以不写。
+       # path: /sr/** 
+       # service-id: service-sr 
+       # dealer:
+       # path: /dealer/** 
+       # service-id: service-dealer 
+       # saler: # 
+       # path: /saler/** 
+       # service-id: service-saler 
+       # express: # 
+       # path: /express/** 
+        #service-id: service-express
       order: # 
         path: /order/** 
-        service-id: service-dealer        
-                
+        service-id: order-service       
 
 
 
